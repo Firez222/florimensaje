@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | FloriMensaje</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="logo">
+            <h1>FloriMensaje</h1>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">El Jardín</a></li>
+                <li><a href="diccionario.html">Glosario Emocional</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <section class="banner-interno">
+
+            <h2>Consultas Personalizadas</h2>
+
+            <p>
+                ¿Necesitas orientación para seleccionar el arreglo floral ideal?
+                Completa el siguiente formulario y te ayudaremos a elegir las flores
+                más adecuadas según el significado que deseas transmitir.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <form id="formularioContacto" class="formulario-contacto">
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required placeholder="Nombre"
+                    title="Ingrese solo letras"
+                    pattern="[A-Za-z]+"
+                    minlength="4"
+                    maxlength="10"
+                    
+                >
+
+                 <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    required placeholder="Apellido"
+                    title="Ingrese solo letras"
+                    pattern="[A-Za-z]+"
+                    minlength="6"
+                    maxlength="12"
+                    
+                >
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    required placeholder="Correo electrónico"
+                    title="ingrese un correo valido"
+                    
+                >
+
+                <select id="evento" required>
+
+                    <option value="">
+                        Seleccione el tipo de evento
+                    </option>
+
+                    <option value="Boda">
+                        Boda
+                    </option>
+
+                    <option value="Cumpleaños">
+                        Cumpleaños
+                    </option>
+
+                    <option value="Aniversario">
+                        Aniversario
+                    </option>
+
+                    <option value="Graduación">
+                        Graduación
+                    </option>
+
+                    <option value="Agradecimiento">
+                        Agradecimiento
+                    </option>
+
+                    <option value="Otro">
+                        Otro
+                    </option>
+
+                </select>
+
+                <input
+                    type="date"
+                    id="fecha"
+                    required
+                >
+
+                <textarea
+                    id="mensaje"
+                    rows="6"
+                    placeholder="Describe el tipo de arreglo floral que necesitas y el mensaje o emoción que deseas transmitir."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Solicitar asesoría floral
+                </button>
+
+   
+                <div id="respuesta" class="mensaje-exito"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            © 2026 FloriMensaje. Todos los derechos reservados.
+        </p>
+
+        <p>
+            Proyecto académico desarrollado con HTML5, CSS3 y JavaScript.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
